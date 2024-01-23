@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.Lab01.FXMLController">
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.Lab01.FXMLController">
    <top>
       <Label text="Lab 01 - Lista di Parole" BorderPane.alignment="CENTER">
          <font>
@@ -43,11 +43,20 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
-            <Button fx:id="btnReset" mnemonicParsing="false" onAction="#doReset" text="Reset">
+            <TextArea fx:id="txtTime" prefHeight="79.0" prefWidth="288.0">
                <VBox.margin>
-                  <Insets bottom="5.0" left="230.0" right="5.0" top="5.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
-            </Button>
+            </TextArea>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="278.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnCancella" mnemonicParsing="false" onAction="#doCancella" text="Cancella" />
+                  <Button fx:id="btnReset" mnemonicParsing="false" onAction="#doReset" text="Reset" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
          </children>
       </VBox>
    </center>
